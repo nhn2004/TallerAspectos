@@ -1,11 +1,25 @@
-package SeccionA.LiteralA;
+package SeccionA.LiteralB;
+
+import SeccionA.LiteralA.Auriculares;
+import SeccionA.LiteralA.AuricularesBluetooth;
+
 public class AdaptadorBluetooth extends Auriculares {
+    private static AdaptadorBluetooth instance;
     private AuricularesBluetooth auricularesBluetooth;
 
-    public AdaptadorBluetooth() {
+    // Constructor privado para evitar instancias directas
+    private AdaptadorBluetooth() {
         super();
         this.auricularesBluetooth = new AuricularesBluetooth();
-        System.out.println("Creando adaptador para auriculares Bluetooth.");
+        System.out.println("Creando instancia única del adaptador para auriculares Bluetooth.");
+    }
+
+    // Método estático para obtener la única instancia de AdaptadorBluetooth
+    public static AdaptadorBluetooth getInstance() {
+        if (instance == null) {
+            instance = new AdaptadorBluetooth();
+        }
+        return instance;
     }
 
     @Override

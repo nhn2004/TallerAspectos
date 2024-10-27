@@ -1,3 +1,4 @@
+package SeccionA.LiteralA;
 public class AuricularesBluetooth {
 
     private boolean emparejados = false;

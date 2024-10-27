@@ -1,3 +1,4 @@
+package SeccionA.LiteralA;
 public class AuricularesConCable extends Auriculares {
 
     public AuricularesConCable() {
