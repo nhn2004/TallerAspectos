@@ -1,7 +1,7 @@
 package SeccionA.LiteralA;
 public class AuricularesBluetooth {
 
-    private boolean emparejados = false;
+    public boolean emparejados = false;
 
     public AuricularesBluetooth() {
         System.out.println("Auriculares Bluetooth creados.");
